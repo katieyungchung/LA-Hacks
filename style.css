@@ -1,0 +1,110 @@
+
+/*
+<selector> {
+    property: value;
+    property2: value;
+}
+*/
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 45px;
+}
+
+.friend-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-image {
+    background-image: url("./profile1.jpg");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.profile-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 80px;
+    gap: 20px;
+}
+
+.scrollable {
+    overflow-x: scroll;
+}
+
+.rec {
+    text-align: center;
+}
+
+.main-img {
+    background-image: url("./cafe.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.location-text {
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tag1 {
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 60px;
+
+}
+
+.tag2 {
+    background-color: lightpink;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.tag3 {
+    background-color: lightsalmon;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Each column width is a fraction of the available space */
+    gap: 20px;
+}
+
+.image {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1; /* Set aspect ratio to 1:1 for square images */
+}
+
+.image img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the container */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+
