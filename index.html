@@ -11,13 +11,20 @@
 <body>
     <div class="container">
         <h1>Day Tracker</h1>
-        <p class="friend-label">Join your friends!</p>
+        <p class="friend-label">Explore your friends' days!</p>
         <!-- <button>Random text</button> -->
         <div class="scrollable">
             <div class="profile-row">
                 <div class="profile">
                     <div class="user-image">
-
+                        <!-- Button linked to another HTML file -->
+                        <a href="gallery.html">
+                            <!-- Button tag starts from here -->
+                            <button class="image-button" 
+                                onclick="alert('Navigating to user2\'s gallery')">
+                            </button>
+                            <!-- Button tag ends here -->
+                        </a>
                     </div>
                     <div class="user-name">
                         @user
@@ -26,7 +33,14 @@
                 </div>
                 <div class="profile">
                     <div class="user-image">
-
+                        <!-- Button linked to another HTML file -->
+                        <a href="gallery.html">
+                            <!-- Button tag starts from here -->
+                            <button class="image-button" 
+                                onclick="alert('Navigating to user2\'s gallery')">
+                            </button>
+                            <!-- Button tag ends here -->
+                        </a>
                     </div>
                     <div class="user-name">
                         @user
@@ -35,7 +49,13 @@
                 </div>
                 <div class="profile">
                     <div class="user-image">
-
+                        <a href="gallery.html">
+                            <!-- Button tag starts from here -->
+                            <button class="image-button" 
+                                onclick="alert('Navigating to user2\'s gallery')">
+                            </button>
+                            <!-- Button tag ends here -->
+                        </a>
                     </div>
                     <div class="user-name">
                         @user
@@ -44,7 +64,13 @@
                 </div>
                 <div class="profile">
                     <div class="user-image">
-
+                        <a href="gallery.html">
+                            <!-- Button tag starts from here -->
+                            <button class="image-button" 
+                                onclick="alert('Navigating to user2\'s gallery')">
+                            </button>
+                            <!-- Button tag ends here -->
+                        </a>
                     </div>
                     <div class="user-name">
                         @user
@@ -57,9 +83,17 @@
         <p class="friend-label">Recommended For You</p>
         <div class="rec">
             <div class="main-img">
-                <div class="location-text">
-                    Bruin Cafe
-                </div>
+                <!-- Link to Google Maps -->
+                <a href="https://maps.app.goo.gl/SaNoByCFaittyx289"> 
+                    <!-- Button tag starts from here -->
+                    <button class="map-button" 
+                        onclick="alert('Navigating to Google Maps')">
+                        <div class="location-text">
+                            Bruin Cafe
+                        </div>
+                    </button>
+                    <!-- Button tag ends here -->
+                </a>
             </div>
 
             <div class="tags">
@@ -75,24 +109,6 @@
             </div>
 
         </div>
-
-        <div>
-            <p class="friend-label">Memories</p>
-
-            <div class="gallery">
-                <div class="image">
-                    <img src="img1.jpg" alt="Image 1">
-                </div>
-                <div class="image">
-                    <img src="img2.jpg" alt="Image 2">
-                </div>
-                <div class="image">
-                    <img src="img3.jpg" alt="Image 3">
-                </div>
-                <!-- Add more image divs as needed -->
-            </div>
-        </div>
-
     </div>
 </body>
 

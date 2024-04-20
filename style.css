@@ -33,6 +33,28 @@ body {
     text-align: center;
 }
 
+.image-button {
+    background-image: url("./profile1.jpg");
+    background-size: cover; 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 40px;
+    border: none; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map-button {
+    background-image: url("./cafe.jpg");
+    background-size: cover; 
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    border: none; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 .profile-row {
     display: grid;
     grid-auto-flow: column;
