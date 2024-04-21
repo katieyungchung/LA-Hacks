@@ -1,0 +1,397 @@
+/*
+<selector> {
+    property: value;
+    property2: value;
+}
+*/
+
+@font-face {
+  font-family: 'Jua';
+  src: url('Jua-Regular.ttf') format('truetype');
+  /* Path to your TTF file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Interr.ttc') format('truetype');
+  /* Path to your TTF file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jua', sans-serif, 'Helvectia-Nueue', sans-serif;
+}
+
+.header-text {
+  font-size: 60px;
+  padding: 45px;
+  color: #FF7A00;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 45px;
+}
+
+.title-friend-label {
+  font-size: 40px;
+  margin: 8px;
+}
+
+.friend-label {
+  font-size: 28px;
+  margin: 8px;
+}
+
+.user-image1 {
+  background-image: url("./avi.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  margin: 9px;
+}
+
+
+.user-image2 {
+  background-image: url("./charlene.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  margin: 9px;
+}
+
+.user-image3 {
+  background-image: url("./evelyn.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  margin: 9px;
+}
+
+.user-image4 {
+  background-image: url("./katie.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  margin: 9px;
+}
+
+.user-name {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 30px;
+}
+
+.profile-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 120px;
+  gap: 20px;
+}
+
+.scrollable {
+  overflow-x: scroll;
+}
+
+.rec {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: left;
+  gap: 20px;
+}
+
+.main-img {
+  background-image: url("./cafe.jpg");
+  background-size: cover;
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+}
+
+.location-text {
+  color: black;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.tags {
+  display: flex;
+  margin: 0;
+}
+
+.tag1 {
+  background-color: #FFEFD7;
+  border-radius: 10px;
+  width: 60px;
+  padding: 10px;
+  height: 10px;
+
+}
+
+.tag2 {
+  background-color: #ECFCE5;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  height: 10px;
+}
+
+.tag3 {
+  background-color: #C9F0FF;
+  border-radius: 10px;
+  width: 80px;
+  padding: 10px;
+  height: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Each column width is a fraction of the available space */
+  gap: 20px;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1;
+  /* Set aspect ratio to 1:1 for square images */
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  /* Ensure image fills the container */
+  object-fit: cover;
+  /* Maintain aspect ratio while covering the container */
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  display: grid;
+
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  */
+  /* Fractional units with a minimum of 100px */
+  grid-auto-rows: 150px;
+  /* Fixed height of 150px for rows */
+  gap: 10px;
+  /* Gap between grid items */
+  background-color: #FFF2C3;
+  overflow: hidden;
+  height: 150px;
+}
+
+
+
+h1 {
+  padding: 45px;
+}
+
+.paragraph {
+  text-align: left;
+  font-family: Inter, sans-serif;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: 3fr 2fr 0.5fr 2fr;
+  gap: 10px;
+}
+
+.col2 {
+  text-align: left;
+  margin-right: 50px;
+}
+
+.topnav {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 50px;
+}
+
+.spacing {
+  height: 40px;
+}
+
+
+
+.pill-container {
+  display: flex;
+}
+
+.pill {
+
+  border-radius: 20px;
+  /* Adjust the border-radius to make it more or less rounded */
+  padding: 8px 16px;
+  /* Adjust padding as needed */
+  margin-right: 10px;
+  /* Adjust margin between pills */
+}
+
+.pill-yellow {
+  background-color: #FFEFD7;
+  /* Background color of the blue pill */
+  color: #A05E03;
+}
+
+.pill-green {
+  background-color: #ECFCE5;
+  /* Background color of the green pill */
+  color: #198155;
+}
+
+.pill-blue {
+  background-color: #C9F0FF;
+  /* Background color of the red pill */
+  color: #0065D0
+}
+
+/* code for image slideshow */
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 400px;
+  width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+
+}
+
+.home {
+  display: grid;
+  place-content: center;
+  padding: 30px;
+  font-size: 30px;
+  color: #FF7A00;
+}
+
+.gallery {
+  display: grid;
+  place-content: center;
+  padding: 30px;
+  font-size: 30px;
+  margin-right: 20px;
+  color: #FF7A00;
+}
+
+.location-section {
+  margin-left: 50px;
+}

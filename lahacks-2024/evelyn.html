@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="section">
+      <div class="logo">
+        <img src="logo.png">
+      </div>
+      <div></div>
+      <a class="home" href = "./index.html" style="color: #FF7A00;"> <div class="home">Home</div> </a>
+       <a class="gallery" href = "./gallery.html" style = "color: #FF7A00;"> <div >Gallery</div> </a>
+      <img src="./profile1.jpg" style="background-size: cover;
+        height: 120px;
+        width: 120px;
+        margin: 10px;
+        margin-right: 40px;
+        border-radius: 60px; float:right;" alt="Your profile">
+    </div>
+  </div>
+  <!-- <p><a href="index.html" style="padding:10px; font-size: 20px;">To go back to home!</a></p> -->
+
+  <div class="container">
+    <h2 class="title-friend-label">Evelyn's Gallery</h2>
+    <p>Hi everyone! I am Evelyn Cho, currently a first year undergraduate studying Computer Science at UCLA. I am having a lot of fun at LA Hacks this year. Truly learning a lot and a great experience to work in a collaborative setting! If you are also in LA Hacks, hope you enjoy it as much as I am enjoying!</p>
+    <form action="/backend.php">
+      <input type="checkbox" id="place1" name="place1" value="Recommend places to this user!">
+      <label for="place1"> Recommendation </label><br>
+      <input type="checkbox" id="place2" name="place2" value="Ask questions to this user!">
+      <label for="place2"> Ask questions</label><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <div>
+      <br>
+      <h2 class="friend-label">Memories</h2>
+
+      <div class="gallery">
+        <div class="image">
+          <img src="evelyn1.png" alt="Image 1">
+        </div>
+        <div class="image">
+          <img src="evelyn2.png" alt="Image 2">
+        </div>
+        <div class="image">
+          <img src="evelyn3.png" alt="Image 3">
+        </div>
+        <!-- Add more image divs as needed -->
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
